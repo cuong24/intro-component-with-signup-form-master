@@ -152,15 +152,18 @@ form input {
 }
 
 form .error__message{
-  color: black;
+  font-size: 0.6em;
+  font-style: italic;
+  color: var(--clr-primary-300);
   text-align: right;
-  margin-right: 2.2em;
+  margin-right: 4em;
+  margin-bottom: 1em;
 }
 
 form .error::after {
   position: absolute;
   content: url(./images/icon-error.svg);
-  transform: translate(-2em, 1.8em);
+  transform: translate(14em, -4em);
 }
 
 .hidden{
