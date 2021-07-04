@@ -139,16 +139,32 @@ body{
 .form{
   background-color: white;
   border-radius: 0.5em;
-  padding: 0.4em;
+  padding-top: 2em;
 }
 
-form > input {
-  margin: 1.1em 0 0 0;
+form input {
   width: 80%;
   height: 4em;
   border-radius: 0.4em;
   font-weight: bolder;
   padding: 1em;
+  position: relative;
+}
+
+form .error__message{
+  color: black;
+  text-align: right;
+  margin-right: 2.2em;
+}
+
+form .error::after {
+  position: absolute;
+  content: url(./images/icon-error.svg);
+  transform: translate(-2em, 1.8em);
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 .submit {

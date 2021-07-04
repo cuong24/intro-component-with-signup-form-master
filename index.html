@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./validationForm.js"></script>
 
     <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -27,7 +28,7 @@
     </style>
   </head>
   <body>
-    <main class=" container split">
+    <main class="container split">
       <div class="content">
         <h1 class="title">Learn to code by watching others</h1>
         <p class="lead">
@@ -39,21 +40,38 @@
       <div class="call-to-action">
         <div class="deal">
           <p class="deal__content">
-            <span class="bold">
-              Try it free 7 days
-            </span>  then $20/mo. thereafter
+            <span class="bold"> Try it free 7 days </span> then $20/mo.
+            thereafter
           </p>
         </div>
         <div class="form">
-          <form action="" class="">
-            <input type="text" class="input" placeholder="First Name" />
-            <input type="text" class="input" placeholder="Last Name" />
-            <input type="text" class="input" placeholder="Email Address"/>
-            <input type="text" class="input" placeholder="Password"/>
-            <input type="submit" class="submit" value="Claim your free trial">
+          <form
+            name="main-form"
+            onsubmit="return validateForm()"
+            method="GET"
+            action="./index.html"
+          >
+            <span class="fname">
+              <input type="text" name="fname" placeholder="First Name" />
+              <p class="error__message hidden">kdjfslkfd</p>
+            </span>
+            <span class="lname"
+              ><input type="text" name="lname" placeholder="Last Name" />
+              <p class="error__message hidden">haha</p>
+            </span>
+            <span class="email">
+              <input type="text" name="email" placeholder="Email Address" />
+              <p class="error__message hidden">haha</p>
+            </span>
+            <span class="pwd">
+              <input type="password" name="pwd" placeholder="Password" />
+              <p class="error__message hidden">haha</p>
+            </span>
+            <input type="submit" class="submit" value="Claim your free trial" />
           </form>
           <p class="note">
-            By clicking the button, you are agreeing to our <span class="bold highlight">Terms and Services</span> 
+            By clicking the button, you are agreeing to our
+            <span class="bold highlight">Terms and Services</span>
           </p>
         </div>
       </div>
