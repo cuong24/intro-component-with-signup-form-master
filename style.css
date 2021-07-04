@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+:root{
+  font-size: 16px;
+  --clr-primary-300: hsl(0.4,100%,73.5%);
+  --clr-primary-500: hsl(154, 59%, 51%);
+  --clr-neutral-300: hsl(249, 10%, 26%);
+  --clr-neutral-500: hsl(246, 25%, 77%);
+  --clr-accent-300: hsl(248, 32%, 49%);
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 375px){
+  body{
+    background-image: url(./images/bg-intro-mobile.png);
+  }
+
+  .container{
+    width: 90vw;
+  }
+
+  .split{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content{
+    text-align: center;
+  }
+
+  .title {
+    margin: 1em;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 376px){
+  body{
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+
+  .container{
+    width: 90vw;
+  }
+
+  .split{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+    margin: 2em;
+  }
+
+  .title {
+    font-size: 3em;
+  }
+}
+
+body{
+  width: 100vw;
+  background-color: var(--clr-primary-300);
+}
+
+.container{
+  margin: auto;
+  margin-top: 3em;
+  align-items: center;
+}
+
+.content{
+  width: 90%;
+  color: white;
+  margin-bottom: 4em;
+}
+
+.title{
+  font-weight: bolder;
+}
+
+.lead{
+  font-size: 0.95em;
+}
+
+.call-to-action{
+  color: white;
+  text-align: center;
+}
+
+.deal{
+  background-color: var(--clr-accent-300);
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.deal__content{
+  font-size: 0.9em;
+  padding: 1.3em 6em;
+}
+
+.bold{
+  font-weight: bolder;
+}
+
+.form{
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 0.4em;
+}
+
+form > input {
+  margin: 1.1em 0 0 0;
+  width: 80%;
+  height: 4em;
+  border-radius: 0.4em;
+  font-weight: bolder;
+  padding: 1em;
+}
+
+.submit {
+  background-color: var(--clr-primary-500);
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 0.1em rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5em;
+}
+
+.note{
+  padding: 0 6em 0 6em;
+  line-height: 2em;
+  color: var(--clr-accent-300);
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.highlight{
+  color: var(--clr-primary-300);
+}
