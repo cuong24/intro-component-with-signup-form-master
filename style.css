@@ -117,7 +117,6 @@ body{
 
 .call-to-action{
   color: white;
-  text-align: center;
 }
 
 .deal{
@@ -125,6 +124,7 @@ body{
   border-radius: 0.5em;
   margin-bottom: 1.5em;
   box-shadow: 0 0.5em rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 
 .deal__content{
@@ -142,8 +142,17 @@ body{
   padding-top: 2em;
 }
 
-form input {
-  width: 80%;
+form{
+  text-align: center;
+}
+
+form div{
+  width: 90%;
+  margin: auto;
+}
+
+div input {
+  width: 100%;
   height: 4em;
   border-radius: 0.4em;
   font-weight: bolder;
@@ -151,19 +160,22 @@ form input {
   position: relative;
 }
 
-form .error__message{
+div .error__message{
+  width: 100%;
   font-size: 0.6em;
   font-style: italic;
   color: var(--clr-primary-300);
   text-align: right;
-  margin-right: 4em;
   margin-bottom: 1em;
+  position: relative;
+  padding-right: 1em;
 }
 
-form .error::after {
+form .error__message::after {
   position: absolute;
   content: url(./images/icon-error.svg);
-  transform: translate(14em, -4em);
+  top: -4em;
+  right: 1em;
 }
 
 .hidden{

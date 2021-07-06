@@ -1,8 +1,8 @@
 function validateForm(){
-  let fname_span = document.querySelector("form > span.fname");
-  let lname_span = document.querySelector("form > span.lname");
-  let email_span = document.querySelector("form > span.email");
-  let pwd_span = document.querySelector("form > span.pwd");
+  let fname_span = document.querySelector("form > div.fname");
+  let lname_span = document.querySelector("form > div.lname");
+  let email_span = document.querySelector("form > div.email");
+  let pwd_span = document.querySelector("form > div.pwd");
   let fname = document.forms["main-form"]["fname"].value;
   let lname = document.forms["main-form"]["lname"].value;
   let email = document.forms["main-form"]["email"].value;
